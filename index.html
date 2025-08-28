@@ -8,6 +8,7 @@
   <title>Davi Wanderley — Landing Page</title>
 </head>
 <body>
+  <div class="body-wrapper">
   <header>
     <div class="container nav">
       <a class="brand" href="#top">
@@ -18,6 +19,7 @@
         <ul>
           <li><a href="#sobre">Sobre</a></li>
           <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#Tecnologia">Tecnologias</a></li>
           <li><a href="#atuacao">Atuação</a></li>
           <li><a href="#contato">Contato</a></li>
         </ul>
@@ -35,10 +37,6 @@
         <p>
           Tenho <strong>20 anos</strong> e atuo no desenvolvimento de sistemas web.
         </p>
-        <div class="cta">
-          <a class="btn btn-primary" href="#contato">Fale comigo</a>
-          <button class="btn btn-ghost" id="copyEmail">Copiar e-mail</button>
-        </div>
       </div>
 
       <aside class="card profile">
@@ -63,6 +61,10 @@
           Sou <strong>Desenvolvedor FullStack</strong> focado em desenvolvimento ágio, seguro e com modernidade. Atualmente sou estudante universitário pela UniFafire e aprendendo FullStack pelo <strong>The Odin Project.</strong>
         </p>
       </div>
+      <div class="social">
+        <div class="card linkedin"><a href="https://www.linkedin.com/in/davi-wanderley-9512042a8/" target="_blank"><img src="public/linkedin.png" alt="Linkedin" height="185" width="600"></a></div>
+        <div class="card github"><a href="https://github.com/Odaviespecifico" target="_blank"><img src="public/github.png" alt="Github" height="185" width="600"></a></div>
+      </div>
     </section>
 
     <!-- PROJETOS -->
@@ -70,27 +72,32 @@
       <h2 class="section-title">Meus projetos</h2>
       <div class="grid">
         <div class="col-6">
+          <a href="https://linguaskill.vercel.app" target="_blank">
           <div class="edu card">
+              <div class="edu-item">
+                <div class="edu-dot"></div>
+                <div>
+                  <h4>Mocktest Linguaskill</h4>
+                  <p>Plataforma de simulados para exames internacionais</p>
+                </div>
+              </div>
+            </a>
             <div class="edu-item">
               <div class="edu-dot"></div>
               <div>
-                <h4>Mocktest Linguaskill</h4>
-                <p>Plataforma de simulados para exames internacionais</p>
+                  <h4>RK Med - Work in Progress</h4>
+                  <p>Desenvolvimento de plataforma integradora de cartões de descontos</p>
+                </a>
               </div>
             </div>
             <div class="edu-item">
               <div class="edu-dot"></div>
+              <a href="https://odaviespecifico.github.io/quiz-judo/" target="_blank">
               <div>
-                <h4>RK Med</h4>
-                <p>Desenvolvimento de plataforma integradora de cartões de descontos</p>
-              </div>
-            </div>
-            <div class="edu-item">
-              <div class="edu-dot"></div>
-              <div>
-                <h4>Quiz Judô</h4>
-                <p>Plataforma educacional e de gestão para dojôs de Judô</p>
-              </div>
+                  <h4>Quiz Judô - Work in Progress</h4>
+                  <p>Plataforma educacional e de gestão para dojôs de Judô</p>
+                </div>
+              </a>
             </div>
           </div>
         </div>
@@ -110,64 +117,44 @@
     
     <!-- Tecnologias -->
     <section id="tecnologias">
-      <h2 class="section-title">Tecnologias</h2>
-      <div class="wrapper">
+      <h2 class="section-title" id="Tecnologia">Tecnologias</h2>
         <div class="carrossel">
           <div class="card">
-            <img src="public/react.png" alt="" class="tech-icon">
+            <img src="public/react.png" alt="react logo" class="tech-icon">
           </div>
-          <div class="card">
-            <img src="public/postgresql.png" alt="" class="tech-icon">
+          <div class="card techLogo">
+            <img src="public/postgresql.png" alt="PostgreSQL logo" class="tech-icon">
           </div>
-          <div class="card">
-            <img src="public/supabase.png" alt="" class="tech-icon">
+          <div class="card techLogo">
+            <img src="public/supabase.png" alt="supabase Logo" class="tech-icon">
           </div>
-          <div class="card">
-            <img src="public/python.png" alt="" class="tech-icon">
+          <div class="card techLogo">
+            <img src="public/python.png" alt="Python Logo" class="tech-icon">
           </div>
-          <div class="card">
-            <img src="public/vite.png" alt="" class="tech-icon">
+          <div class="card techLogo">
+            <img src="public/vite.png" alt="Vite Logo" class="tech-icon">
           </div>
-          <div class="card">
-            <img src="public/react-Router.png" alt="" class="tech-icon">
+          <div class="card techLogo">
+            <img src="public/react-Router.png" alt="React Router Logo" class="tech-icon">
           </div>
-          <div class="card">
-            <img src="public/react.png" alt="" class="tech-icon">
+          <div class="card techLogo">
+            <img src="public/git.png" alt="Git Logo" class="tech-icon">
           </div>
-          <div class="card">
-            <img src="public/postgresql.png" alt="" class="tech-icon">
+          <div class="card techLogo">
+            <img src="public/tailwind.png" alt="Tailwind Logo" class="tech-icon">
           </div>
-          <div class="card">
-            <img src="public/supabase.png" alt="" class="tech-icon">
+          <div class="card techLogo">
+            <img src="public/html.png" alt="html Logo" class="tech-icon">
           </div>
-          <div class="card">
-            <img src="public/python.png" alt="" class="tech-icon">
+          <div class="card techLogo">
+            <img src="public/css.png" alt="css Logo" class="tech-icon">
           </div>
-          <div class="card">
-            <img src="public/vite.png" alt="" class="tech-icon">
+          <div class="card techLogo javascript">
+            <img src="public/js.png" alt="js Logo" class="tech-icon">
           </div>
-          <div class="card">
-            <img src="public/react-Router.png" alt="" class="tech-icon">
+          <div class="card techLogo figma">
+            <img src="public/figma.png" alt="figma Logo" class="tech-icon">
           </div>
-          <div class="card">
-            <img src="public/react.png" alt="" class="tech-icon">
-          </div>
-          <div class="card">
-            <img src="public/postgresql.png" alt="" class="tech-icon">
-          </div>
-          <div class="card">
-            <img src="public/supabase.png" alt="" class="tech-icon">
-          </div>
-          <div class="card">
-            <img src="public/python.png" alt="" class="tech-icon">
-          </div>
-          <div class="card">
-            <img src="public/vite.png" alt="" class="tech-icon">
-          </div>
-          <div class="card">
-            <img src="public/react-Router.png" alt="" class="tech-icon">
-          </div>
-        </div>
       </div>
     </section>
 
@@ -221,5 +208,6 @@
   </footer>
 
   <script src="script.js"></script>
+  </div>
 </body>
 </html>

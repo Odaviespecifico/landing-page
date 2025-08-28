@@ -48,4 +48,5 @@ document.querySelectorAll('.card, .pill').forEach(el => observer.observe(el));
 
 // Carrossel
 let carrossel = document.querySelector('.carrossel')
-
+carrossel.innerHTML += carrossel.innerHTML
+carrossel.innerHTML += carrossel.innerHTML

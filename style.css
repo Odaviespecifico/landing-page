@@ -20,6 +20,17 @@ body {
   font-family: Inter, sans-serif;
   color: var(--text);
   background: linear-gradient(180deg, var(--purple-50), var(--white) 35%);
+  overflow-x: clip;
+  width: 100vw;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.body-wrapper {
+  width: 100vw;
   overflow-x: hidden;
 }
 
@@ -75,6 +86,55 @@ nav a:hover { background: var(--purple-100); color: var(--purple-700); }
 }
 .tagline { color: var(--purple-700); font-weight: 700; }
 
+/* Sobre */
+#sobre {
+  display: flex;
+  flex-direction: column;
+}
+.social {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 60%;
+  align-self: center;
+}
+@media screen and (max-width: 900px) {
+  .social {
+    max-width: 100%;
+  }
+  .card {
+    padding: 10px;
+    padding-top: 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .social {
+  }
+}
+.social > .card {
+  box-sizing: content-box;
+  padding: 5px;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card.linkedin {
+  background-color: #0183c1;
+}
+
+.card.github {
+  background-color: #171515;
+}
+.social > .card img{
+  box-sizing: content-box;
+  max-width: 100%;
+  height: fit-content;
+  aspect-ratio: initial;
+}
+
 /* Sections */
 section { padding: 38px 0; }
 .section-title { font-size: 1.6rem; margin: 0 0 16px; }
@@ -95,21 +155,37 @@ section { padding: 38px 0; }
 
 /* Tecnologias */
 section#tecnologias { display: flex; align-items: baseline; justify-content: center; flex-direction: column; width: 100vw; }
-.wrapper {width: 140vw; overflow-x: hidden; position: relative; left: -250px}
-.carrossel {display: flex; gap: 20px; animation: carrossel 15s linear infinite; width: fit-content;}
+.wrapper {width: 140vw; overflow-x: hidden; position: relative}
+.carrossel {display: flex; gap: 20px; width: fit-content; animation: scroll 20s linear infinite; position: relative; left: -50vw;}
 .carrossel:hover {animation-play-state: paused;}
-.tech-icon {width: 200px; height: 200px;}
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+.tech-icon {width: 10rem; height: 10rem;}
 
-
-@keyframes carrossel {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-66.6666%); }
+.card.techLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@media (max-width: 400px) {
-  .carrossel { animation-duration: 15s;}
-  .tech-icon {size: 50px;}
+.card > img {
+  background-position: center;
 }
+
+.card.figma {
+  background-color: #1e1e1e;
+}
+
+.card.javascript {
+  background-color: #f0db4f;
+}
+
+@media (max-width: 600px) {
+  .tech-icon { width: 6rem; height: 6rem; }
+}
+
 /* Chips */
 .chips { display: flex; flex-wrap: wrap; gap: 10px; }
 .pill {
@@ -134,7 +210,9 @@ footer a { color: var(--purple-700); font-weight: 600; text-decoration: none; }
 
 /* Responsivo */
 @media (max-width: 900px) {
-  .hero { grid-template-columns: 1fr; }
+  .hero { grid-template-columns: 1fr; 
+  padding-top: 10px;}
   .col-6, .col-4 { grid-column: span 12; }
   nav ul { display: none; }
+
 }
