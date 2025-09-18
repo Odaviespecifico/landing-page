@@ -157,13 +157,26 @@ section#tecnologias { display: flex; align-items: baseline; justify-content: cen
 @keyframes scroll {
     0% { transform: translateX(0); }
     100% { transform: translateX(-50%); }
-  }
+}
+
+@keyframes rotation {
+  0% { transform: scale(1);}
+  100% { transform: scale(1.35);}
+}
+
 .tech-icon {width: 10rem; height: 10rem;}
 
 .card.techLogo {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s;
+}
+
+.card.techLogo:hover {
+  transform: scale(1.35);
+  box-shadow: var(--shadow);
+  animation: rotation 1s ease-out forwards;
 }
 
 .card > img {
@@ -199,6 +212,8 @@ section#tecnologias { display: flex; align-items: baseline; justify-content: cen
 .contact { display: grid; gap: 14px; }
 .contact .card p { margin: 0 0 14px; color: var(--muted); }
 .contact .row { display: flex; gap: 10px; flex-wrap: wrap; }
+
+.btn-flex { display: inline-flex; align-items: center; gap: 8px; }
 
 /* Footer */
 footer { text-align: center; padding: 34px 0 50px; color: var(--muted); }
