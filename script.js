@@ -50,3 +50,8 @@ document.querySelectorAll('.card, .pill').forEach(el => observer.observe(el));
 let carrossel = document.querySelector('.carrossel')
 carrossel.innerHTML += carrossel.innerHTML
 carrossel.innerHTML += carrossel.innerHTML
+
+// Card flip animation
+document.querySelectorAll('.card.techLogo').forEach(element => {
+  element.addEventListener('mouseover', (e) => addAnimation(e.target))
+})
